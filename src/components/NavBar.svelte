@@ -20,10 +20,7 @@
 
 
 nav {
-  width: 100%;
-  background-color: rgba(131, 16, 146, 0.738);
-  padding-left: 30px;
-  padding-right: 30px;
+  background-color: rgba(150, 74, 160, 0.738);
   display: flex;
   justify-content: space-between;
 }

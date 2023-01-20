@@ -1,5 +1,6 @@
 import { writable } from "svelte/store";
 
-const account = writable<string>();
+const ethereumAccount = writable<string>();
 
-export default account;
+
+export default ethereumAccount;

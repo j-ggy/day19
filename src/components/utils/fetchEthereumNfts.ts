@@ -13,6 +13,7 @@ async function fetchEthereumNfts(address: string): Promise<NFT[]> {
     const domainNfts: NFT[] = [];
 
     nfts.ownedNfts.forEach(function(alchemyNft) {
+        if (!alchemyNft.media[0].gateway) return;
         const media = alchemyNft.media
         const imageURL = media.length ? media[0].gateway : "";
         const nft: NFT = {
